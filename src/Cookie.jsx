@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
+import { Link } from "react-router-dom";
 
 export default function CookieStorage() {
   const [name, setName] = useState("");
@@ -28,6 +29,9 @@ export default function CookieStorage() {
         onChange={handleChange}
         placeholder="Enter your name"
       />
+      <br />
+      <br />
+      <Link to="/" className="back-button">← Back to Home</Link>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { NameContext } from "./demoContext";
+import { Link } from "react-router-dom";
 
 function NameDisplay(){
     const {name, setName}=useContext(NameContext)
@@ -7,7 +8,10 @@ function NameDisplay(){
         <div>
            <p> Say Hello {name}</p>
                 <br />
-            <button onClick={()=>setName('I AM THE ONE')}></button>
+            <button onClick={()=>setName('I AM THE ONE')} >Click</button>
+            <br />
+            <br />
+            <Link to="/" className="back-button">← Back to Home</Link>
         </div>
     )
 }

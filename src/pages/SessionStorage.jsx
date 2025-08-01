@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function WelcomeWithSession() {
   const [name, setName] = useState("");
@@ -21,6 +22,7 @@ export default function WelcomeWithSession() {
     <div>
       <h2>Welcome, {name || "Guest"}</h2>
       <input value={name} onChange={handleChange} placeholder="Enter name" />
+      <Link to="/" className="back-button">← Back to Home</Link>
     </div>
   );
 }

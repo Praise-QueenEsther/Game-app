@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Name(params) {
     return <div>
@@ -25,6 +26,7 @@ function Name(params) {
         <li>useContext=Lets child components access the shared data</li>
         <li>createContext=Creates the "storage box" where data will live</li>
       </ul>
+      <Link to="/" className="back-button">← Back to Home</Link>
     </div>
 }
 

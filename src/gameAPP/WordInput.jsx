@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import { GameContext } from "./gameContext";
+import { Link } from "react-router-dom";
 
 export const WordInput=()=>{
     // const [input, setInput]=useState("")
@@ -27,7 +28,8 @@ export const WordInput=()=>{
     setTimeout(() => setMessage(''), 2000); 
 
     return(
-        <form onSubmit={handleSubmit}>  
+        <div>
+            <form onSubmit={handleSubmit}>  
         <input type="text" value={input} 
         onChange={(e)=> setInput(e.target.value)
 
@@ -36,5 +38,11 @@ export const WordInput=()=>{
         <div>{message}</div>
 
         </form>
+        <br />
+        <br />
+        <Link to="/" className="back-button">← Back to Home</Link>
+        </div>
+        
+
     )
 }

@@ -8,6 +8,7 @@ import CookieStorage from './Cookie';
 import Welcome from './pages/DemoStorage';
 import { BrowserStorage } from './pages/StorageTypes';
 import GameRoute from './gameAPP/GameRoute';
+import SemiBar from './pages/Home';
 
 
 
@@ -15,7 +16,8 @@ function App() {
   return (
   
     <Routes>
-      <Route path="/" element={<ReactContextPage/>} />
+      <Route path='/' element={<SemiBar/>}></Route>
+      <Route path="reactContext" element={<ReactContextPage/>} />
       <Route path='usecon' element={<UseCon/>}></Route>
       <Route path='demo-storage' element={<Welcome/>}></Route>
       <Route path='session' element={<WelcomeWithSession/>}></Route>

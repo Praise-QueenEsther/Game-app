@@ -1,4 +1,5 @@
 import { useEffect,useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Welcome(params) {
 
@@ -19,8 +20,11 @@ export default function Welcome(params) {
 
     return(
         <div>
-            <h1>Wellcom {name||"Guest"}</h1>
+            <h1>Welcome {name||"Guest"}</h1>
             <input type="text" value={name} onChange={handleChange} placeholder="input your name"/>
+            <br />
+            <br />
+            <Link to="/" className="back-button">← Back to Home</Link>
         </div>
     )
     
