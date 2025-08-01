@@ -47,7 +47,7 @@ import "./Home.css";
 const SemiBar = () => {
   return (
     <div className="home">
-      <h2>These are the following types Browser-storage</h2>
+      <h2>These are the following types Browser-storage and the  Game</h2>
       <ul>
         <li><Link to="/reactContext">ReactContextPage</Link></li>
         <li><Link to="/usecon">UseCon</Link></li>
